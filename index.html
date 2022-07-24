@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet" 
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" 
+    crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container border border-danger text-center pb-5 rounded" style="max-width: 700px;"> 
+        <!-- ICONO DE LA EMPRESA -->
+        <header class="text-center pb-5">
+            <h1>Esco<span class="text-danger">mart</span> </h1>
+        </header>
+        <!-- DATOS A INGRESAR -->
+        <section class="row ">
+            <!-- PRECIO DE COMPRA -->
+            <div class="row pb-5">
+                <h4 class="col-6 text-end"> PPRECIO DE COMPRA:  </h3>
+                <div class="col-6 input-group" style="max-width: 150px">
+                    <span class="input-group-text">$</span>
+                    <input type="number" class="form-control" id="precio-compra">
+                </div>
+            </div>
+            <!-- CANTIDAD -->
+            <div class="row pb-5">
+                <h4 class="col-6 text-end">CANTIDAD:  </h3>
+                <div class="col-6 input-group" style="max-width: 80px">
+                    <input type="number" class="form-control" value="1" id="cant">
+                </div>
+                <!-- <input type="number" class="col-6"> -->
+            </div>
+            <!-- PORCENTAJE DE GANANCIA -->
+            <div class="row pb-5">
+                <h4 class="col-6 text-end">% GANANCIA:  </h3>
+                <div class="col-6 input-group" style="max-width: 125px">
+                    <input type="number" class="form-control" value="30" id="gcia">
+                    <span class="input-group-text">%</span>
+                </div>
+            </div>
+        </section>
+        <!-- BOTON CALCULAR -->
+        <section class="mb-3">
+            <button class="btn btn-success" id="calcular" onclick="calcular();">CALCULAR</button>
+        </section>
+        <!-- RESULTADO -->
+        <section class="">
+            <div class="row pb-5 pt-5 bg-success text-white bg-opacity-75 rounded-pill">
+                <h4 class="col-6 text-end">PRECIO SUGERIDO: </h3>
+                <div class="col-6 input-group" style="max-width: 150px">
+                    <h4 id="pVenta"></h4>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>
